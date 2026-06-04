@@ -1,0 +1,141 @@
+:root {
+    --sushi-red: #d64045;
+    --soy-brown: #4b3621;
+    --rice-white: #faf9f6;
+    --seaweed-green: #35524a;
+    --gold: #d4af37;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: var(--rice-white);
+    color: #222;
+    line-height: 1.6;
+}
+
+nav {
+    background: var(--sushi-red);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.tagline {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 2rem;
+    background: var(--sushi-red);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 999px;
+    text-decoration: none;
+}
+
+.mission,
+.stats,
+.leaderboard-preview,
+.passport-header {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.progress-card {
+    max-width: 600px;
+    margin: auto;
+}
+
+.progress-bar {
+    height: 20px;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+    background: var(--seaweed-green);
+}
+
+.leaderboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 1rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+.leader-card {
+    padding: 2rem;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.gold { background: #fff4cc; }
+.silver { background: #eeeeee; }
+.bronze { background: #f4d7c1; }
+
+.passport-grid {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 2rem;
+}
+
+.stamp {
+    border: 4px dashed var(--sushi-red);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 20px;
+    background: white;
+    transition: 0.3s;
+}
+
+.stamp:hover {
+    transform: translateY(-5px);
+}
+
+.pending {
+    opacity: 0.7;
+}
