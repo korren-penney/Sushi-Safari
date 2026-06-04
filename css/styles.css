@@ -1,0 +1,203 @@
+:root {
+    --sushi-red: #d64045;
+    --soy-brown: #4b3621;
+    --rice-white: #faf9f6;
+    --seaweed-green: #35524a;
+    --gold: #d4af37;
+    --text-dark: #222;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: var(--rice-white);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* NAV */
+nav {
+    background: var(--sushi-red);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+/* =========================
+   PASSPORT COVER
+========================= */
+
+.passport-cover {
+    background: var(--soy-brown);
+    color: white;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 4rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,.2);
+}
+
+.passport-emblem {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.passport-year {
+    display: inline-block;
+    margin-top: 1rem;
+    letter-spacing: 5px;
+    opacity: 0.8;
+}
+
+/* =========================
+   PROGRESS BAR
+========================= */
+
+.passport-progress {
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.passport-progress-bar {
+    background: #ddd;
+    border-radius: 50px;
+    overflow: hidden;
+    height: 30px;
+    margin: 1rem 0;
+}
+
+.passport-progress-fill {
+    background: linear-gradient(
+        90deg,
+        var(--sushi-red),
+        var(--gold)
+    );
+    height: 100%;
+    width: 20%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* =========================
+   PASSPORT BOOK
+========================= */
+
+.passport-book {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.passport-page {
+    background: #fffdf8;
+    border-radius: 20px;
+    padding: 3rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+
+/* =========================
+   STAMPS
+========================= */
+
+.stamp {
+    aspect-ratio: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    border-radius: 50%;
+
+    font-weight: bold;
+
+    position: relative;
+
+    transform: rotate(-8deg);
+
+    transition: 0.3s ease;
+    padding: 1rem;
+}
+
+.stamp:hover {
+    transform: rotate(0deg) scale(1.05);
+}
+
+/* COMPLETED STAMP */
+.completed {
+    border: 8px solid var(--sushi-red);
+    color: var(--sushi-red);
+
+    background: repeating-radial-gradient(
+        circle,
+        transparent,
+        transparent 6px,
+        rgba(214,64,69,.05) 7px
+    );
+
+    opacity: 0.9;
+}
+
+/* PENDING STAMP */
+.pending {
+    border: 8px dashed #bbb;
+    color: #999;
+    transform: rotate(6deg);
+    opacity: 0.6;
+}
+
+/* DATE */
+.stamp-date {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+/* =========================
+   MOTTO
+========================= */
+
+.passport-motto {
+    text-align: center;
+    padding: 3rem 2rem;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.passport-motto blockquote {
+    font-size: 1.2rem;
+}
