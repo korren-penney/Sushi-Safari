@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log a Sushi Visit</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="log-entry">
+
+<header>
+    <nav>
+        <div class="logo">🍣 Sushi Safari</div>
+
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="passport.html">Passport</a></li>
+        <li><a href="leaderboard.html">Leaderboard</a></li>
+    </ul>
+</nav>
+
+
+</header>
+
+<main class="form-container">
+
+
+<h1>Log a Sushi Safari Visit</h1>
+
+<form id="visitForm" class="safari-form">
+
+    <div class="form-row two-column">
+
+        <div class="form-group">
+            <label for="restaurant">Restaurant</label>
+            <select id="restaurant" required>
+            <option value="">Choose...</option>
+            <option>Sushi Island</option>
+            <option>Sun Sushi</option>
+            <option>O Sushi</option>
+            <option>Kuma Bento</option>
+            <option>The Rock Steakhouse</option>
+            <option>Sushi & Noodle Nami Express (Churchill Square)</option>
+            <option>Moxies</option>
+            <option>Grotto</option>
+            <option>Green Mango</option>
+            <option>Asian Cafe</option>
+            <option>Basho</option>
+            <option>Sushi Maki</option>
+            <option>Ocean Sushi</option>
+
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="visitDate">Date Visited</label>
+            <input type="date" id="visitDate" required>
+        </div>
+
+    </div>
+
+    <div class="form-row score-grid">
+
+    <div class="form-group">
+        <label for="freshness">Freshness</label>
+        <select id="freshness" required>
+            <option value="">Choose...</option>
+            <option value="1">1 - 🥶</option>
+            <option value="2">2 - ❄️</option>
+            <option value="3">3 - 🧊</option>
+            <option value="4">4 - 🌬️</option>
+            <option value="5">5 - 🍣</option>
+            <option value="6">6 - 🌊</option>
+            <option value="7">7 - 🐟</option>
+            <option value="8">8 - 🦐</option>
+            <option value="9">9 - 🦑</option>
+            <option value="10">10 - 🐠</option>
+        </select>
+        <input type="hidden" id="freshness" value="0">
+    </div>
+
+        <div class="form-group">
+            <label for="flavor">Flavour</label>
+            <select id="flavor" required>
+                <option value="">Choose...</option>
+                <option value="1">1 - 😖</option>
+                <option value="2">2 - 😕</option>
+                <option value="3">3 - 😐</option>
+                <option value="4">4 - 🙂</option>
+                <option value="5">5 - 😋</option>
+                <option value="6">6 - 🤤</option>
+                <option value="7">7 - 🤩</option>
+                <option value="8">8 - 🥳</option>
+                <option value="9">9 - 🤯</option>
+                <option value="10">10 - 👑</option>
+            </select>
+            <input type="hidden" id="flavor" value="0">
+        </div>
+
+        <div class="form-group">
+            <label for="value">Value</label>
+            <select id="value" required>
+                <option value="">Choose...</option>
+                <option value="1">1 - 💸</option>
+                <option value="2">2 - 🪙</option>
+                <option value="3">3 - 🪙🪙</option>
+                <option value="4">4 - 🪙🪙🪙</option>
+                <option value="5">5 - 🪙🪙🪙🪙</option>
+                <option value="6">6 - 🪙🪙🪙🪙🪙</option>
+                <option value="7">7 - 🪙🪙🪙🪙🪙🪙</option>
+                <option value="8">8 - 🪙🪙🪙🪙🪙🪙🪙</option>
+                <option value="9">9 - 🪙🪙🪙🪙🪙🪙🪙🪙</option>
+                <option value="10">10 - 🤑</option>
+            </select>
+            <input type="hidden" id="value" value="0">
+        </div>
+
+        <div class="form-group">
+            <label for="atmosphere">Atmosphere</label>
+            <select id="atmosphere" required>
+                <option value="">Choose...</option>
+                <option value="1">1 - 🥶</option>
+                <option value="2">2 - ❄️</option>
+                <option value="3">3 - 🧊</option>
+                <option value="4">4 - 🌬️</option>
+                <option value="5">5 - 🍣</option>
+                <option value="6">6 - 🌊</option>
+                <option value="7">7 - 🐟</option>
+                <option value="8">8 - 🦐</option>
+                <option value="9">9 - 🦑</option>
+                <option value="10">10 - 🐠</option>
+            </select>
+            <input type="hidden" id="atmosphere" value="0">
+        </div>
+
+        <div class="form-group">
+            <label for="service">Service</label>
+            <select id="service" required>
+                <option value="">Choose...</option>
+                <option value="1">1 - 😖</option>
+                <option value="2">2 - 😕</option>
+                <option value="3">3 - 😐</option>
+                <option value="4">4 - 🙂</option>
+                <option value="5">5 - 😋</option>
+                <option value="6">6 - 🤤</option>
+                <option value="7">7 - 🤩</option>
+                <option value="8">8 - 🥳</option>
+                <option value="9">9 - 🤯</option>
+                <option value="10">10 - 👑</option>
+            </select>
+            <input type="hidden" id="service" value="0">
+        </div>
+        </div>
+
+    </div>
+
+    <div class="form-row">
+        <div class="form-group full-width">
+            <label for="bestBite">Best Bite</label>
+            <input type="text" id="bestBite">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group full-width">
+            <label for="notes">Notes</label>
+            <textarea id="notes"></textarea>
+        </div>
+    </div>
+
+    <button type="submit" class="save-btn">
+        Save Visit
+    </button>
+
+</form>
+
+
+</main>
+
+<script src="js/safari.js"></script>
+
+</body>
+</html>
